@@ -44,19 +44,19 @@ export const Home = () => (
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-secondary"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-white transition hover:bg-secondary sm:w-auto"
             >
               View Projects <ArrowRight size={16} />
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-5 py-2 text-sm font-semibold text-ink-700 transition hover:border-secondary hover:text-secondary"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-ink-200 px-5 py-2 text-sm font-semibold text-ink-700 transition hover:border-secondary hover:text-secondary sm:w-auto"
             >
               Contact Me
             </Link>
             <a
               href={profile.resumeUrl}
-              className="inline-flex items-center gap-2 rounded-full border border-ink-200 px-5 py-2 text-sm font-semibold text-ink-700 transition hover:border-secondary hover:text-secondary"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-ink-200 px-5 py-2 text-sm font-semibold text-ink-700 transition hover:border-secondary hover:text-secondary sm:w-auto"
               download
             >
               Download Resume <Download size={16} />

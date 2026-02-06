@@ -62,7 +62,7 @@ export const Projects = () => (
               <img
                 src={project.image}
                 alt={`${project.title} preview`}
-                className="h-48 w-full rounded-xl object-cover"
+                className="h-40 w-full rounded-xl object-cover sm:h-48"
                 loading="lazy"
               />
               <div className="mt-5 flex flex-1 flex-col">
