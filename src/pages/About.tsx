@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { ReactElement } from "react";
 import { Brain, Code2, Database, Monitor } from "lucide-react";
 import { PageWrapper } from "../components/PageWrapper";
 import { SectionHeading } from "../components/SectionHeading";
@@ -61,7 +62,7 @@ export const About = () => (
             viewport={{ once: true, amount: 0.2 }}
           >
             {courseworkCategories.map((category) => {
-              const iconMap: Record<string, JSX.Element> = {
+              const iconMap: Record<string, ReactElement> = {
                 "Core CS": <Monitor size={18} />,
                 "AI / ML": <Brain size={18} />,
                 "Programming & Tools": <Code2 size={18} />,

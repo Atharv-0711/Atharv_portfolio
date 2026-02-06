@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import type { ReactElement } from "react";
 import {
   Code2,
   Cpu,
@@ -13,7 +14,7 @@ import { PageWrapper } from "../components/PageWrapper";
 import { SectionHeading } from "../components/SectionHeading";
 import { projects } from "../data/portfolio";
 
-const iconMap: Record<string, JSX.Element> = {
+const iconMap: Record<string, ReactElement> = {
   React: <Code2 size={14} />,
   "Node.js": <Server size={14} />,
   PostgreSQL: <Database size={14} />,
